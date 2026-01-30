@@ -452,3 +452,21 @@
 {"guid":"0a928a2beba51c19","level":"info","message":"login"}
 {"error":{"errno":-5,"code":"EIO","syscall":"read"},"level":"error","message":"uncaughtException: read EIO\nError: read EIO","stack":"Error: read EIO","exception":true,"date":"Mon Nov 06 2023 18:01:19 GMT+0000 (Coordinated Universal Time)","process":{"pid":15,"uid":1000,"gid":1000,"cwd":"/home/runner/BonziWORLD-Classic","execPath":"/nix/store/ra8r42571xvv1m85wanh1ll9mxmp0mwl-nodejs-16.13.2/bin/node","version":"v16.13.2","argv":["/nix/store/ra8r42571xvv1m85wanh1ll9mxmp0mwl-nodejs-16.13.2/bin/node","/tmp/prybar-nodejs-241676653.js"],"memoryUsage":{"rss":67026944,"heapTotal":14610432,"heapUsed":12676296,"external":1526345,"arrayBuffers":106682}},"os":{"loadavg":[22.52,12.83,8.63],"uptime":3492.07},"trace":[]}
 {"guid":"c1dc5b8a62eb2fc8","level":"info","message":"login"}
+{"guid":"531c394e34b3b5dc","level":"info","message":"login"}
+{"guid":"d456adcba35ce463","level":"info","message":"login"}
+{"guid":"70c0e7b4fe6e0995","level":"info","message":"login"}
+{"guid":"63c8696e297e0a2c","level":"info","message":"login"}
+{"guid":"0ad6afca4eb034a5","level":"info","message":"login"}
+{"guid":"331d44db79afbaa2","level":"info","message":"login"}
+{"guid":"7e4c76fc1c903d30","level":"info","message":"login"}
+{"guid":"b0feefdd5fac6a06","level":"info","message":"login"}
+{"guid":"dc683b0aa94724be","level":"info","message":"login"}
+{"guid":"8dd4ee0f63473255","level":"info","message":"login"}
+{"guid":"7890d41c33a7c5ca","level":"info","message":"login"}
+{"guid":"a30184482231deb3","level":"info","message":"login"}
+{"guid":"38015a0672210f78","level":"info","message":"login"}
+{"guid":"6f5c20e52f96c12a","level":"info","message":"login"}
+{"guid":"21eecabe8079381c","level":"info","message":"login"}
+{"guid":"530320d780cba21b","level":"info","message":"login"}
+{"guid":"80bb634b519699c0","level":"info","message":"login"}
+{"guid":"01ffdcf9866c59a4","level":"info","message":"login"}

@@ -471,41 +471,6 @@ let userCommands = {
           guid: this.guid,
       });
   },
-  knowledge: function () {
-      var randomstuff = [
-          "Losky will be forgotten Soon.",
-          "We don't like children invading our communities.",
-          'Kiddies are type of users who use Grounded threats, say "Muted" after muting someone, raging in all caps, use the word "Kiko" but we don\'t know what it means, and post cringy videos. We ban them for a good reason. They also break rules because, as they say, it "ruins" the bonziworld site itself.',
-      ];
-      this.room.emit("talk", {
-          text: randomstuff[Math.floor(Math.random() * randomstuff.length)],
-          guid: this.guid,
-      });
-  },
-    "2018":function(text){
-        this.room.emit('talk',{
-            text:`This generation sucks! Adolescents are filled with pornographic obsessions. Since 2018, i fucking hate people like them nowadays. They think they're so funny with their 'funny' hentai profile pictures, and pictures like sonic using a hentai face. It's disgusting, I hate it.`,
-            guid:this.guid
-        })
-    },
-    "lmao":function(text){
-        this.room.emit('talk',{
-            text:`HEY EVERYONE LOOK AT ME I'M TRYING TO SCREW WITH THE SERVER LMAO`,
-            guid:this.guid
-        })
-    },
-    "lmao2":function(text){
-        this.room.emit('talk',{
-            text:`HEY EVERYONE LOOK AT ME I'M TRYING TO SPAM THE SERVER LMAO`,
-            guid:this.guid
-        })
-    },
-    "behh":function(text){
-        this.room.emit('talk',{
-            text:`Behh is the WORST word! It’s horrendous and ugly. I hate it. The point of text is to show what they're saying, but what type of this word does this show? Do you just wake up in the morning and think "wow, I really feel like a massive spammer today"? It's useless. I hate it. It just provokes a deep rooted anger within me whenever I see it. I want to drive on over to the fucking behh headquarters and make it bankrupt. If this was in the bonziworld videos I'd go apeshit like crazy. People just comment "behh" as if it's funny. It's not. Behh deserves to die. He deserves to have his disgusting "!behhh" copy smashed in with a hammer. Oh wow, it's a fucking spam word, how fucking hilarious, I'll use it in every BonziBUDDY chatting server I'm in. NO. STOP IT. It deserves to burn in hell. Why is it so goddamn spammy? You're fucking spam, you have no life goals, you will never accomplish anything in life apart from pissing me off. When you die noone will mourn. I hope you die`,
-            guid:this.guid
-        })
-    },
     css:function(...txt){
         this.room.emit('css',{
             guid:this.guid,
@@ -526,32 +491,9 @@ let userCommands = {
             this.socket.emit('background',{background:text})
         }
     },
-    choose_rank:function(){
-        this.socket.emit('choose_rank',{
-            guid:this.guid
-        })
-    },
-    spawn_bonzi:function(){
-        this.socket.emit('spawn_bonzi',{
-            guid:this.guid
-        })
-    },
-    spawn_bonzi_spam:function(){
-        this.socket.emit('spawn_bonzi_spam',{
-            guid:this.guid
-        })
-    },
-    assistant_changer:function(){
-        this.socket.emit('assistant_changer',{
-            guid:this.guid
-        })
-    },
     "linux": "passthrough",
     "pawn": "passthrough",
     "bees": "passthrough",
-    "bonzikill": "passthrough",
-    "bonzikill2": "passthrough",
-    "bonzify": "passthrough",
     "color": function(color) {
         if (typeof color != "undefined") {
             if (settings.bonziColors.indexOf(color) == -1)
@@ -611,11 +553,6 @@ let userCommands = {
         this.room.emit("owo", {
             guid: this.guid,
             target: sanitize(Utils.argsString(arguments),settingsSantize)
-        });
-    },
-    "blackhat": function() {
-        this.room.emit("blackhat", {
-            guid: this.guid
         });
     },
     "triggered": "passthrough",
